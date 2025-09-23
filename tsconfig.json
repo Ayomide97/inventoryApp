@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    // Modern JavaScript output
+    "target": "ESNext",
+
+    // Libraries to include in compilation
+    // DOM → browser APIs like document/window
+    // DOM.Iterable → allows iteration over DOM collections
+    // ESNext → latest JavaScript features
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+
+    // Allow mixing .js and .ts files during migration
+    "allowJs": true,
+
+    // Don’t type-check .d.ts files from node_modules
+    "skipLibCheck": true,
+
+    // Ensures compatibility with CommonJS and ES modules
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    // Strict type-checking (recommended, catches more errors)
+    "strict": true,
+
+    // File/path casing must be consistent
+    "forceConsistentCasingInFileNames": true,
+
+    // Use ESNext-style module system
+    "module": "ESNext",
+    "moduleResolution": "Node",
+
+    // Allow importing JSON files directly
+    "resolveJsonModule": true,
+
+    // Required for tools like Vite, ensures isolated compilation per file
+    "isolatedModules": true,
+
+    // Don’t emit compiled JS files (Vite handles bundling)
+    "noEmit": true,
+
+    // Use the new JSX transform (React 17+)
+    "jsx": "react-jsx"
+  },
+  // Compile files inside /src only
+  "include": ["src"]
+}
