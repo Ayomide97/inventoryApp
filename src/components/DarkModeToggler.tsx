@@ -1,5 +1,5 @@
-// import { MdOutlineLightMode } from "react-icons/md";
-// import { MdOutlineNightlight } from "react-icons/md";
+import { MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineNightlight } from "react-icons/md";
 import { useDarkMode } from "../context/DarkModeContext";
 
 const DarkModeToggler = () => {
@@ -13,11 +13,11 @@ const DarkModeToggler = () => {
     >
       {darkMode ? (
         <span className="flex items-center gap-2">
-          {/* <MdOutlineNightlight className="text-indigo-600" /> */}
+          <MdOutlineNightlight className="text-indigo-600" />
         </span>
       ) : (
         <span className="flex items-center gap-2">
-          {/* <MdOutlineLightMode className="text-indigo-700" /> */}
+          <MdOutlineLightMode className="text-indigo-700" />
         </span>
       )}
     </button>

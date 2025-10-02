@@ -1,12 +1,10 @@
-import "./App.css";
-import { DarkModeProvider } from "./context/DarkModeContext";
+import "./index.css";
+import AppLayout from "./AppLayout";
 
 function App() {
   return (
     <>
-      <DarkModeProvider>
-        <h1>Inventory Management System</h1>
-      </DarkModeProvider>
+      <AppLayout />
     </>
   );
 }
