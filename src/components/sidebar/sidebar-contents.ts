@@ -3,21 +3,29 @@ import {
   MdOutlineInventory,
   MdOutlineSettings,
 } from "react-icons/md";
+import { LuPencilRuler } from "react-icons/lu";
 export function getSidebarContents() {
-  const dashboard = {
-    label: "Home",
-    icon: MdOutlineDashboard,
-    path: "/",
-  };
-  const inventory = {
-    label: "Inventory",
-    icon: MdOutlineInventory,
-    path: "/inventory",
-  };
-  const settings = {
-    label: "Settings",
-    icon: MdOutlineSettings,
-    path: "/settings",
-  };
-  return { dashboard, inventory, settings };
+  const sidebarContents = [
+    {
+      label: "Home",
+      icon: MdOutlineDashboard,
+      path: "/",
+    },
+    {
+      label: "Test",
+      icon: LuPencilRuler,
+      path: "/test",
+    },
+    // {
+    //   label: "Inventory",
+    //   icon: MdOutlineInventory,
+    //   path: "/inventory",
+    // },
+    // {
+    //   label: "Settings",
+    //   icon: MdOutlineSettings,
+    //   path: "/settings",
+    // },
+  ];
+  return sidebarContents;
 }

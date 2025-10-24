@@ -1,12 +1,13 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
-import Index from "./index";
+import IndexRoute from "./IndexRoute";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Dashboard from "./pages/Dashboard";
+import Test from "./pages/Test";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Index />,
+    element: <IndexRoute />,
     errorElement: (
       <ErrorBoundary>
         <Outlet />
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Dashboard />,
+      },
+      {
+        path: "test",
+        element: <Test />,
       },
     ],
   },

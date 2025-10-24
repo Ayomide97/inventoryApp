@@ -1,4 +1,5 @@
 import { useDarkMode } from "../../context/DarkModeContext";
+
 type SpinnerLoaderProps = {
   height?: number | string;
   width?: number | string;

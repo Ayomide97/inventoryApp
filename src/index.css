@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 @layer components {
+  #app-container {
+    padding-inline: calc(var(--spacing) * 6);
+    padding-block: calc(var(--spacing) * 4);
+  }
+
   .loader {
     width: 45px;
     aspect-ratio: 0.75;

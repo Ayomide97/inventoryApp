@@ -11,11 +11,13 @@ const AppLayout = () => {
       <div className="flex h-screen w-full overflow-hidden">
         <ErrorBoundary>
           <SideBar />
-          <div className="flex h-screen w-full flex-col overflow-y-auto bg-red-500">
+          <div className="flex h-screen w-full flex-col overflow-y-auto">
             <Suspense fallback={<PageLoading />}>
-              <main className="bg-blue-500 h-full">
+              <main className="h-full">
                 <Header />
-                <Outlet />
+                <div id="app-container" className="bg-gray-50">
+                  <Outlet />
+                </div>
               </main>
             </Suspense>
           </div>
