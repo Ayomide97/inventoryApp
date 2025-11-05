@@ -7,17 +7,17 @@ const DarkModeToggler = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className={`cursor-pointer transition-transform duration-500 ${
-        darkMode ? "rotate-180" : "rotate-0"
+      className={`cursor-pointer transition-transform duration-500 text-xl text-blue-500 hover:text-blue-600 ${
+        darkMode ? "rotate-180 text-gray-200" : "rotate-0"
       }`}
     >
       {darkMode ? (
         <span className="flex items-center gap-2">
-          <MdOutlineNightlight className="text-indigo-600" />
+          <MdOutlineNightlight />
         </span>
       ) : (
         <span className="flex items-center gap-2">
-          <MdOutlineLightMode className="text-indigo-700" />
+          <MdOutlineLightMode />
         </span>
       )}
     </button>

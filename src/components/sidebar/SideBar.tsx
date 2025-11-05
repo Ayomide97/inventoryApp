@@ -12,7 +12,7 @@ const SideBar = () => {
   // }
   return (
     <div
-      className={`h-full bg-gray-100 py-3 border-r-2 border-gray-200 ${
+      className={`h-full bg-gray-100 py-3 border-r-2 border-gray-200 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-200 ${
         isSidebarOpen ? "w-64 px-3" : "w-[59px] px-2"
       }`}
     >

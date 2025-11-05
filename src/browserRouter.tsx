@@ -3,6 +3,7 @@ import IndexRoute from "./IndexRoute";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Dashboard from "./pages/Dashboard";
 import Test from "./pages/Test";
+import Inventory from "./pages/Inventory";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
       {
         path: "test",
         element: <Test />,
+      },
+      {
+        path: "inventory",
+        element: <Inventory />,
       },
     ],
   },

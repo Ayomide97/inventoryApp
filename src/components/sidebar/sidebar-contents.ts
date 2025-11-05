@@ -12,6 +12,11 @@ export function getSidebarContents() {
       path: "/",
     },
     {
+      label: "Inventory",
+      icon: MdOutlineInventory,
+      path: "/inventory",
+    },
+    {
       label: "Test",
       icon: LuPencilRuler,
       path: "/test",

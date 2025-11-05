@@ -4,6 +4,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { Suspense } from "react";
 import PageLoading from "./components/PageLoading";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const AppLayout = () => {
   return (
@@ -11,13 +12,17 @@ const AppLayout = () => {
       <div className="flex h-screen w-full overflow-hidden">
         <ErrorBoundary>
           <SideBar />
-          <div className="flex h-screen w-full flex-col overflow-y-auto">
+          <div className="flex h-screen w-full flex-col relative">
             <Suspense fallback={<PageLoading />}>
-              <main className="h-full">
+              <main className="relative">
                 <Header />
-                <div id="app-container" className="bg-gray-50">
+                <div
+                  id="app-container"
+                  className="bg-gray-50 h-screen dark:bg-gray-800 dark:text-gray-200 overflow-y-auto"
+                >
                   <Outlet />
                 </div>
+                <Footer />
               </main>
             </Suspense>
           </div>
